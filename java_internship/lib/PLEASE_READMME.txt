@@ -1,0 +1,2 @@
+For the Add User Api , we just have to click on add user button as the textfields input do not get sent in the api request . This was the error that was being encountered in the assignent . only sending the pre-given user object as the body was giving the appropriate results,
+ 

@@ -15,7 +15,7 @@ class _HomePageState extends State<HomePage> {
   var passwordCon = TextEditingController();
 
   final url =
-      "https://qa2.sunbasedata.com/sunbase/portal/api/assignment_auth.jsp";
+      "https://qa.sunbasedata.com/sunbase/portal/api/assignment_auth.jsp";
 
   void login(String username, String password) async {
     var response = await http.post(

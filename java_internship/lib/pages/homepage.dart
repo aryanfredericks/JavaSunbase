@@ -19,7 +19,7 @@ class _MainPageState extends State<MainPage> {
   }
 
   final uri =
-      "https://qa2.sunbasedata.com/sunbase/portal/api/assignment.jsp?cmd=get_customer_list";
+      "https://qa.sunbasedata.com/sunbase/portal/api/assignment.jsp?cmd=get_customer_list";
   List<dynamic> arr = [];
   Future<void> fetchCustomerList() async {
     final response = await http.get(
@@ -36,7 +36,7 @@ class _MainPageState extends State<MainPage> {
   }
 
   void deleteUser(String uuid)async{
-    String uri = "https://qa2.sunbasedata.com/sunbase/portal/api/assignment.jsp?cmd=delete&uuid=$uuid";
+    String uri = "https://qa.sunbasedata.com/sunbase/portal/api/assignment.jsp?cmd=delete&uuid=$uuid";
     var response = await http.post(
       Uri.parse(uri),
       headers: {

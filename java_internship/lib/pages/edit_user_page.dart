@@ -40,7 +40,7 @@ class _EditUserState extends State<EditUser> {
 
   Future<void> updateUser(String fn,String ln,String street,String add,String c,String s,String e,String p)async{
     String uri =
-        "https://qa2.sunbasedata.com/sunbase/portal/api/assignment.jsp?cmd=update&uuid=${widget.item['uuid']}";
+        "https://qa.sunbasedata.com/sunbase/portal/api/assignment.jsp?cmd=update&uuid=${widget.item['uuid']}";
     var response =await http.post(
       Uri.parse(uri),
       headers: {

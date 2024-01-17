@@ -22,7 +22,7 @@ class _AddUserPageState extends State<AddUserPage> {
 
   void addNewUser() async {
     String uri =
-        "https://qa2.sunbasedata.com/sunbase/portal/api/assignment.jsp?cmd=create";
+        "https://qa.sunbasedata.com/sunbase/portal/api/assignment.jsp?cmd=create";
     var response = await http.post(
       Uri.parse(uri),
       headers: {'Authorization': 'Bearer ${widget.accessToken}'},
